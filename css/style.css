@@ -3,9 +3,6 @@ width: 1000px;
 margin: auto;
 }
 
-body{
- background-color: #7f3333;
-}
 
 .tittle{
   margin-top: 0;
@@ -47,11 +44,13 @@ body{
 
 
 .header{
-  max-width: 1440px;
+  max-width: 1980px;
   min-height: 600px;
   background-color: #7fc7ff;
   padding-top: 60px;
   position: relative;
+  margin: auto;
+  width: 100%;
 }
 
 .top{
@@ -94,6 +93,8 @@ display: flex;
 flex-direction: row;    
 justify-content: space-between;
 align-items: center;
+padding-left: 200px;
+height: 500px;
 }
 
 .header__text{
@@ -137,8 +138,11 @@ font-weight: 400;
 }
 
 .wood{
-width: 300px;
+position: absolute;
+width: 600px;
 height: 500px;
+bottom: 0;
+left: 0;
 }
 
 .cloud1{
@@ -156,8 +160,9 @@ height: 500px;
 }
 .about{
   padding-top: 50px;
-  height: 600px;
   background: linear-gradient(to bottom, #53ad71 70%, #ffdd99) ;
+  max-width: 1980px;
+  margin: auto;
 }
 
 
@@ -210,6 +215,8 @@ text-transform: uppercase;
     padding-top: 50px;
     background-color: #ffdd99;
     padding-bottom:100px ;  
+    max-width: 1980px;
+    margin: auto;
     }  
 #scale{
 width: 100%;
@@ -256,6 +263,8 @@ background-color: #999999;
 padding-top: 50px;  
 background-color: #a8a8a8;
 padding-bottom: 25px;
+max-width: 1980px;
+margin: auto;
 }
 
 .portfolio__link{
@@ -280,44 +289,44 @@ margin-top: 30px;
 
 .feedback{
   padding-top: 50px;  
-  
+  max-width: 1980px;
+  margin: auto;
   background-color: #3c5499;
   padding-bottom: 100px;
 }
 
-
+.feedback__input{
+  width: ;
+  margin: auto;
+}
 
 
 .in-name{
   width: 386px;
   height: 56px;
   margin-bottom: 30px;
-  margin-right: 30px;
+  margin-right: 23px;
   padding-left: 25px;
 }
-
-.in-email:focus, .in-name:focus , .in-message{
-outline: none;
+.in-name:nth-child(2){
+ margin-right: 0;
 }
 
-.in-email{
 
-  width: 386px;
-  height: 56px;
-  margin: auto;
-  margin-bottom: 30px;
-  padding-left: 25px;
-}
 
 .in-message{
   width: 810px;
   height: 150px;
   display: block;
-  margin: auto;
+
   resize: none;
   padding:25px;
 }
 
+
+.in-email:focus, .in-name:focus , .in-message{
+  outline: none;
+  }
 
 .message-button{
   background-color: #30bae7;
@@ -329,8 +338,10 @@ outline: none;
 
 
 .footer{
-  padding: 15px;
+  padding: 15px 0px;
   background-color: #344b8e;
+  max-width: 1980px;
+  margin: auto;
 }
 
 .footer__link, .footer__link:active{

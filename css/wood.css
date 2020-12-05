@@ -16,18 +16,14 @@
     }
   }
   
-  html, body {
-    margin: 0;
-    padding: 0;
-  }
+
   
   .canvas {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    min-height: 600px;
-  
+    width: 350px;
+    min-height: 505px;
     background-color: transparent;
   }
   
