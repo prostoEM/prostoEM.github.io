@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/wood.css">
     <link rel="stylesheet" href="./css/adaptive.css">
+    <script ENGINE="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
-    <title>EMRAN</title>
+    <title>prosto_EM</title>
 </head>
 <body class="">
-   <header class="header">
+   <header class="header" id="header">
+    <div class="top" id="top">
+      <a class="logo" href="https://vk.com/nfl23" target="_blank">prosto_Em</a>
+      <nav class="" >
+          <button class="nav__button" id="button_about">Обо мне</button>
+          <button class="nav__button" id="button_skill">Мой скилл</button>
+          <button class="nav__button" id="button_portfolio">Портфолио</button>
+          <button class="nav__button" id="button_call">Связь</button>
+      </nav>
+  </div>
        <div class="container">
-       <div class="top">
-           <a class="logo" href="https://vk.com/nfl23" target="_blank">Emran</a>
-           <nav class="nav">
-               <button class="nav__button">HOME</button>
-               <button class="nav__button">MY SKILLS</button>
-               <button class="nav__button">WORK</button>
-               <button class="nav__button">BLOG</button>
-               <button class="nav__button">CONTACT</button>
-           </nav>
-       </div>
+       
        <div class="wood">
         <div class="canvas">
             <div class="tree">
@@ -86,54 +87,58 @@
        </div>
        <div class="block">
            <div class="header__text">
-            <h1 class="header__tittle">Hi there!</h1>
-            <h2 class="header__subtittle">I am the new kid on the web. 
-        I build awesome websites and mobile apps.</h2>
+            <h1 class="header__tittle"> Привет &#128075,</h1>
+            <p class="header__subtittle">Меня зовут Эмран,<br>&nbsp &nbsp &nbsp &nbspно можно <span class="header__subtittle_name">просто Эм</span>.
+            <br>Я - <span class="header__subtittle_text-bold">фронтенд разработчик!</span>
+            </p>
             </div>
-            <button class="button header__button">WORK WITH ME!</button>
+            <button class="button header__button" onclick={buttonTell()} id="btn">Связаться</button>
        </div>
       </div>
-
+        
        <img src="./img/clou.png" class="cloud1" alt=""></div>
    </header>
-   <section class="about">
+   <section class="about" id="about">
      <div class="container">
-      <h1 class="tittle text_dark">SERVICES I PROVIDE</h1>
+      <h1 class="tittle text_dark">ОБО МНЕ</h1>
       <div class="line"></div>
-      <h2 class="subtittle text_dark">I am working with both individuals and businesses from all over the globe 
-        to create awesome websites and applications.
-        </h2>
+      <h2 class="subtittle text_dark">
+        Мне 24 года, живу в Москве и занимаюсь фронтенд и бот разработкой.<br>
+        В марте 2020 года я поступил в школу программирования Яндекс.Практикум<br>
+        Успешно окончив курсы я попал в стартап CASHBOOK,<br>
+        На данный момент раотаю в компании <a href="https://metabot24.info/#top">MetaBOT24</a><br>
+      </h2>
       <div class="blocks">
         <div class="about__card">
           <img src="./img/block_flag.png" alt="" class="about__img">
-          <h3 class="name">Branding</h3>
-          <p class="text">Lorem ipsum dolor sit amet, 
-            consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+          <h3 class="name">БОТ</h3>
+          <p class="text">Создам бота, который моет помочь вам с бизнесом и упростит работу коммуникции с клиентами.</p>
         </div>
         <div class="about__card">
           <img src="./img/block_pen.png" alt="" class="about__img">
-          <h3 class="name">Design</h3>
-          <p class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem  </p>
+          <h3 class="name">Сайт</h3>
+          <p class="text">Помогу создать сайт, сверстать и дополнить его функционалом.
+            Будь то интернет магазин или блок.</p>
         </div>
         <div class="about__card">
           <img src="./img/block_mehanic.png" alt="" class="about__img">
-          <h3 class="name">Development</h3>
-          <p class="text">At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+          <h3 class="name">Приложение</h3>
+          <p class="text">Разработаю приложений или сложный сайт, разработаю игру на современных фраймворках под ключ.</p>
         </div>
         <div class="about__card">
           <img src="./img/block_rocket.png" alt="" class="about__img">
-          <h3 class="name">ROCKET SCIENCE</h3>
-          <p class="text">Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+          <h3 class="name">Команда</h3>
+          <p class="text">Работаю над сложными проектами в команде. Могу собрать команду или поучавствовать в вашей.</p>
         </div>
       </div>
     </div>
    </section>
-   <section class="skills">
+   <section class="skills" id="skill">
     <div class="container">
-      <h1 class="tittle black">I GOT SKILLS</h1>
+      <h1 class="tittle black">МОИ СКИЛЛЫ</h1>
       <div class="line"></div>
       <h2 class="subtittle black">
-       Much to learn me still have.
+       актуально на 26.07.2021
       </h2>
       <div class="blocks">
         <div class="card">
@@ -168,12 +173,11 @@
     </div>
   
    </section>
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
   <div class="container">
-    <h1 class="tittle">OUR PORTFOLIO</h1>
+    <h1 class="tittle">МОЕ ПОРТФОЛИО</h1>
     <div class="line"></div>
-    <h2 class="subtittle">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
-      consectetur, adipisci velit, sed quia non numquam</h2>
+    <h2 class="subtittle">посмотрите проекты, которые я недавно реализвал</h2>
       <div class="blocks">
         <a href="" class="portfolio__link">
           <img src="./img/portfolio_1.png" alt="" class="portfolio__img">
@@ -199,16 +203,16 @@
 <section class="feedback">
  
 
-  <div class="container">
-    <h1 class="tittle">GET IN TOUCH</h1>
+  <div class="container" id="call">
+    <h1 class="tittle">НАПИШИ НА ПОЧТУ</h1>
     <div class="line"></div>
-    <h2 class="subtittle">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</h2>
+    <h2 class="subtittle">так же можешь связаться со мной по почте или любой из соц сетей</h2>
     <div class="blocks">
       <form action="" class="form">
-        <input type="text" class="in-name" placeholder="Your Name">
-        <input type="text" class="in-name" placeholder="Your Email">
-        <textarea type="text" class="in-message" placeholder="Your message"></textarea>
-        <input type="submit" value="SEND MESSAGE" class="button message-button">
+        <input type="text" class="in-name" placeholder="Как тебя зовут">
+        <input type="mail" class="in-name" placeholder="Твой email">
+        <textarea type="text" class="in-message" placeholder="Сообщение"></textarea>
+        <input type="submit" value="ОТПРАВИТЬ" class="button message-button">
       </form>
     </div>
   </section>
